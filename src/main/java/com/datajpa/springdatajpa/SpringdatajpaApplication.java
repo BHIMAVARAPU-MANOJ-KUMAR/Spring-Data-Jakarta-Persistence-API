@@ -5,8 +5,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.logging.Logger;
 
-import com.datajpa.springdatajpa.model.*;
-import com.datajpa.springdatajpa.repository.StudentIdCardRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +16,14 @@ import org.springframework.context.annotation.Bean;
  * import org.springframework.data.domain.Sort.Direction;
  */
 
+import com.datajpa.springdatajpa.model.Book;
+import com.datajpa.springdatajpa.model.Course;
+import com.datajpa.springdatajpa.model.Department;
+import com.datajpa.springdatajpa.model.Enrollment;
+import com.datajpa.springdatajpa.model.EnrollmentId;
+import com.datajpa.springdatajpa.model.Student;
+import com.datajpa.springdatajpa.model.StudentIdCard;
+import com.datajpa.springdatajpa.repository.StudentIdCardRepository;
 import com.datajpa.springdatajpa.repository.StudentRepository;
 import com.datajpa.springdatajpa.repository.StudentRepositoryPageSort;
 import com.github.javafaker.Faker;
